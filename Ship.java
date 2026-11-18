@@ -5,41 +5,44 @@ public class Ship {
   int rowPos;
   int colPos;
   boolean isHorizontal;
-  public Ship(int 1, String[] name, int r, int c, boolean h) {
-    length = 1;
-    name = newShip;
-    rowPos = r;
-    colPos = c;
-    isHorizontal = h;
+  public Ship(int initialLength, String[] initialName, int r, int c, boolean h) {
+    this.length = initialLength;
+    this.name = initialName[0];
+    this.rowPos = r;
+    this.colPos = c;
+    this.isHorizontal = h;
   }
-    public getName() {
+    public String getName() {
       return name;
     }
-    public getRow() {
+    public int getRow() {
       return rowPos;
     }
-    public getCol() {
+    public int getCol() {
       return colPos;
     }
-    public getIsHorizontal() {
+    public boolean getIsHorizontal() {
       return isHorizontal;
     }
-    public setLength(int 1) {
-      this.setLength = 1;
-    }
-    public setName(String newShip) {
-      this.setName = newShip;
-    }
-    public setRow(int r) {
-      this.setRow = r;
-    }
-    public setCol(int c) {
-      this.setCol = c;
-    }
-    public setIsHorizontal() {
-      this.setIsHorizontal = h;
-    }
-    public getLength() {
+    public int getLength() {
       return length;
     }
+    public void setName(String newShip) {
+      this.name = newShip;
+    }
+    public void setRow(int r) {
+      this.rowPos = r;
+    }
+    public void setCol(int c) {
+      this.colPos = c;
+    }
+    public void setIsHorizontal(boolean h) {
+      this.isHorizontal = h;
+    }
+    public void setLength(int length) {
+      this.length = length;
+    }
     public String toString() {
+      return name;
+    }
+}
