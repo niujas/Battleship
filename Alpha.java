@@ -1,3 +1,6 @@
 public class Alpha {
-    Ship ship1 = new Ship(4, new String[]{"Battleship"}, 0, 0, true);
+    public static void main(String[] args) {
+        Board board1 = new Board();
+        System.out.println(board1);
+    }
 }
